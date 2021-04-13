@@ -1,33 +1,69 @@
 // TODO: Include packages needed for this application
-inquirer = require('inquirer');
-fs = require('fs');
+const fs = require('fs');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
+// const readme = [];
 // TODO: Create an array of questions for user input
 const questions = [
-  {
-    type: 'input',
-    name: 'name',
-    message: 'What is your name?'
-  },
-  {
-    type: 'checkbox',
-    name: 'languages',
-    message: 'Whats your favorite language?',
-    choices: ['HTML', 'CSS', 'Javascript', 'Python']
-  }
-];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile('README.md', questions, function(error) {
-    if(error) {
-      return new error
+    {
+      type: 'input',
+      name: 'title',
+      message: 'Give your README a title.',
+      default: 'Readme Generator'
+    },
+    {
+      type: 'input', 
+      name: 'name',
+      message: 'Enter your name',
+      default: 'Charles'
+    },
+    {
+      type: 'input',
+      name: 'description',
+      message: 'Give your README a description.',
+      default: 'description'
+    },
+    {
+      type: 'confirm',
+      name: 'confirm-link',
+      message: 'Would you like to give your README a link?',
+      default: false
+    },
+    {
+      type: 'input',
+      name: 'link-input',
+      message: 'Enter your projects link',
+      default: 'github.com'
+    },
+    {
+      type: 'list',
+      name: 'license',
+      message: 'What is the license?',
+      choices: [
+        
+      ]
     }
-    console.log(questions)
+  ]
+// TODO: Create a function to write README file
+const writeToFile = function(data) {
+  fs.writeFile('./README.md',data, err => {
+    if(err) {
+      throw new Error(err)
+    }
+    console.log('README complete')
   })
+};
+
+// // TODO: Create a function to initialize app
+function init() {
+  inquirer.prompt(questions)
+  .then(function(answers) {
+    const READMEfile = generateMarkdown(answers)
+    writeToFile(READMEfile)
+  });
 }
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
+// // Function call to initialize app
 init();
+
+
