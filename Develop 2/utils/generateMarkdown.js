@@ -1,26 +1,10 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if(!license) {
-    return ''
-  }
-}
+const index = require('../index')
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(license) {
-    return ''
-  } else {
-    return ''
-  }
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if(license) {
-    return ''
+  if(license === true) {
+    return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
   } else {
     return ''
   }
@@ -33,7 +17,11 @@ module.exports = function generateMarkdown(answers) {
   ## ${answers.name}
   ## Summary
   ${answers.description}
-  
+  ## Generator Made With
+  ${answers.components}
+  ## Wesbite Link
+  ${answers.link}
+  ## License Link
   ${renderLicenseLink(answers.license)}
 `
-}
+};

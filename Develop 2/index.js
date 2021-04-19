@@ -13,7 +13,7 @@ const questions = [
     },
     {
       type: 'input', 
-      name: 'name',
+      name: 'tableOfContents',
       message: 'Enter your name',
       default: 'Charles'
     },
@@ -24,6 +24,12 @@ const questions = [
       default: 'description'
     },
     {
+      type: 'input',
+      name: 'components',
+      message: 'What did you use to generate your README?',
+      default: 'I used node.js as my library and javascript as my language to write the code to generate the README'
+    },
+    {
       type: 'confirm',
       name: 'confirm',
       message: 'Would you like to give your README a link?',
@@ -31,20 +37,16 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'link-input',
+      name: 'link',
       message: 'Enter your projects link',
       default: 'github.com',
       when: ({ confirm}) => confirm
     },
     {
-      type: 'list',
+      type: 'confirm',
       name: 'license',
-      message: 'What is the license?',
-      choices: [
-        'ISC',
-        'AWD',
-        'HLB'
-      ]
+      message: 'Would you like to link the license for this project?',
+      default: true
     }
   ]
 // TODO: Create a function to write README file
