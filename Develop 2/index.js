@@ -13,7 +13,7 @@ const questions = [
     },
     {
       type: 'input', 
-      name: 'tableOfContents',
+      name: 'name',
       message: 'Enter your name',
       default: 'Charles'
     },
