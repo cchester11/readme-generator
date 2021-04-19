@@ -25,22 +25,25 @@ const questions = [
     },
     {
       type: 'confirm',
-      name: 'confirm-link',
+      name: 'confirm',
       message: 'Would you like to give your README a link?',
-      default: false
+      default: true
     },
     {
       type: 'input',
       name: 'link-input',
       message: 'Enter your projects link',
-      default: 'github.com'
+      default: 'github.com',
+      when: ({ confirm}) => confirm
     },
     {
       type: 'list',
       name: 'license',
       message: 'What is the license?',
       choices: [
-        
+        'ISC',
+        'AWD',
+        'HLB'
       ]
     }
   ]

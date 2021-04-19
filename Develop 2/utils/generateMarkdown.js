@@ -10,7 +10,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license) {
-    return '* [License] (#license)'
+    return ''
   } else {
     return ''
   }
@@ -20,7 +20,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license) {
-    return 'license'
+    return ''
   } else {
     return ''
   }
@@ -31,7 +31,9 @@ module.exports = function generateMarkdown(answers) {
   return `
   # ${answers.title}
   ## ${answers.name}
+  ## Summary
   ${answers.description}
+  
   ${renderLicenseLink(answers.license)}
 `
 }
