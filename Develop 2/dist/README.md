@@ -3,16 +3,20 @@
   Readme Generator
 
   ## Table of Contents
-  * [Description](#description)
-  * [Code Used](#code_used)
-  * [Screenshot](#screenshot)
+  * [Summary](#summary)
+  * [Made With](#components)
+  * [Screenshot](#imageDisplay)
+  * [Website Link](#license)
+  * [Collaborators](#collaborators)
+  * [Collaborators Links](#username)
+  * [Badge](#badgeLink)
   * [License](#license)
-  * [Contributed](#contributed)
-  * [Tests](#tests)
-  * [Questions](#questions)
 
   ## Summary
   This README was created using a personally built generator.
+
+  ## Installation
+  First, create a folder for your README. Secondly, use a code editor to set up your files and install all your node modules including inquirer
 
   ## Generator Made With
   I used node.js as my library and javascript as my language to write the code to generate the README
@@ -27,7 +31,7 @@
   My collaborators include Andrew Hardemon and the UT Bootcamp
 
   ## Collaborators Link's
-  Andrew@github.com
+  get@github.com
 
   ## Badge's
   N/A

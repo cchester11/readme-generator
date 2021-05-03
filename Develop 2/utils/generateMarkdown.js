@@ -34,16 +34,20 @@ module.exports = function generateMarkdown(answers) {
   ${answers.title}
 
   ## Table of Contents
-  * [Description](#description)
-  * [Code Used](#code_used)
-  * [Screenshot](#screenshot)
+  * [Summary](#summary)
+  * [Made With](#components)
+  * [Screenshot](#imageDisplay)
+  * [Website Link](#license)
+  * [Collaborators](#collaborators)
+  * [Collaborators Links](#username)
+  * [Badge](#badgeLink)
   * [License](#license)
-  * [Contributed](#contributed)
-  * [Tests](#tests)
-  * [Questions](#questions)
 
   ## Summary
   ${answers.description}
+
+  ## Installation
+  ${answers.installation}
 
   ## Generator Made With
   ${answers.components}
