@@ -33,6 +33,8 @@ module.exports = function generateMarkdown(answers) {
   # Title
   ${answers.title}
 
+  ---
+
   ## Table of Contents
   * [Summary](#summary)
   * [Made With](#components)
@@ -42,32 +44,60 @@ module.exports = function generateMarkdown(answers) {
   * [Collaborators Links](#username)
   * [Badge](#badgeLink)
   * [License](#license)
+  
+  ---
 
   ## Summary
   ${answers.description}
 
+  ---
+
   ## Installation
   ${answers.installation}
+
+  ---
 
   ## Generator Made With
   ${answers.components}
 
+  ---
+
   ## Screenshot 
   ${getVideo(answers.imageDisplay)}
+
+  ---
 
   ## Wesbite Link
   ${answers.link}
 
+  ---
+
   ## Collaborators
   ${answers.collaborators}
+
+  ---
 
   ## Collaborators Link's
   ${getGitHub(answers.username)}
 
+  ---
+
   ## Badge's
   ${renderBadge(answers.badgeLink)}
 
+  ---
+
   ## License Link
   ${renderLicenseLink(answers.license)}
+
+  ---
+
+  ## Contact
+  Contact me at ${answers.email} with any questions
+  
+  ---
+
+  ## Github profile 
+  ${answers.githubProfile}
 `
 };

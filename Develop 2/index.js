@@ -90,6 +90,18 @@ const questions = [
       message: 'Would you like to link the license for this project?',
       default: true
     },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'What is your email',
+      default: 'cchester1@angelo.edu'
+    },
+    {
+      type: 'input',
+      name: 'githubProfile',
+      message: "Provide the link for your github profile",
+      default: 'https://github.com/cchester11'
+    }
   ]
 // TODO: Create a function to write README file
 const writeToFile = function(data) {
