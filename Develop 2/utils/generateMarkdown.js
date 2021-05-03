@@ -34,7 +34,13 @@ module.exports = function generateMarkdown(answers) {
   ${answers.title}
 
   ## Table of Contents
-  ${answers.tableOfContents}
+  * [Description](#description)
+  * [Code Used](#code_used)
+  * [Screenshot](#screenshot)
+  * [License](#license)
+  * [Contributed](#contributed)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Summary
   ${answers.description}

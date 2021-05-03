@@ -3,7 +3,13 @@
   Readme Generator
 
   ## Table of Contents
-  Title
+  * [Description](#description)
+  * [Code Used](#code_used)
+  * [Screenshot](#screenshot)
+  * [License](#license)
+  * [Contributed](#contributed)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Summary
   This README was created using a personally built generator.
@@ -21,7 +27,7 @@
   My collaborators include Andrew Hardemon and the UT Bootcamp
 
   ## Collaborators Link's
-  undefined
+  Andrew@github.com
 
   ## Badge's
   N/A

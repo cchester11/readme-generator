@@ -90,12 +90,6 @@ const questions = [
       message: 'Would you like to link the license for this project?',
       default: true
     },
-    {
-      type: 'input',
-      name: 'tableOfContents',
-      message: 'Give your README a table of contents',
-      default: 'Title'
-    }
   ]
 // TODO: Create a function to write README file
 const writeToFile = function(data) {
