@@ -33,7 +33,7 @@ const questions = [
       type: 'input',
       name: 'imageDisplay',
       message: 'provide the link to the image',
-      default: 'https://drive.google.com/file/d/1RwAyGBygS3NpMJpj5ngjMkUFxi0J9ZTW/view',
+      default: 'https://drive.google.com/file/d/1pfIO3aXaEkv1jZMKSqBOJe5duj3HjWc9/view',
       when: ({ image }) => {
         if (image) {
             return true;
