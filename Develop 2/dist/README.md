@@ -32,7 +32,7 @@
   ---
 
   ## Screenshot 
-  https://drive.google.com/file/d/1RwAyGBygS3NpMJpj5ngjMkUFxi0J9ZTW/view
+  https://drive.google.com/file/d/1pfIO3aXaEkv1jZMKSqBOJe5duj3HjWc9/view
 
   ---
 
@@ -47,7 +47,7 @@
   ---
 
   ## Collaborators Link's
-  randomlink 
+  get@github.com
 
   ---
 
